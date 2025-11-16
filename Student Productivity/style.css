@@ -1,13 +1,10 @@
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Times New Roman;
 }
 
-/* ---------------------------
-   HEADER
----------------------------- */
 header {
   background: #4CAF50;
   color: white;
@@ -26,9 +23,6 @@ header .tagline {
   font-weight: 300;
 }
 
-/* ---------------------------
-   NAVIGATION BAR
----------------------------- */
 nav {
   background: #2d2d2d;
   display: flex;
@@ -49,14 +43,10 @@ nav a:hover {
   color: #4CAF50;
 }
 
-/* Remove weird gaps on edges */
 body {
   background: #f7f7f7;
 }
 
-/* ---------------------------
-   MAIN CONTENT AREA
----------------------------- */
 main {
   max-width: 900px;
   margin: 40px auto;
@@ -75,9 +65,6 @@ main p {
   margin-bottom: 15px;
 }
 
-/* ---------------------------
-   OPTIONAL: Images inside content
----------------------------- */
 main img {
   width: 100%;
   max-width: 700px;
@@ -92,10 +79,6 @@ figcaption {
   margin-top: 5px;
   color: #555;
 }
-
-/* ---------------------------
-   ASIDE BLOCKS
----------------------------- */
 aside {
   background: #fff;
   padding: 15px;
@@ -103,10 +86,6 @@ aside {
   margin-top: 30px;
   border-radius: 5px;
 }
-
-/* ---------------------------
-   FOOTER
----------------------------- */
 footer {
   background: green;
   color: white;
