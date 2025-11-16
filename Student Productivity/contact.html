@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Contact — Student Productivity Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+        function submitFeedback() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let rating = document.getElementById("rating").value;
+            let feedback = document.getElementById("feedback").value;
+
+            if (name === "" || email === "" || feedback === "") {
+                alert("Please fill all required fields");
+                return;
+            }
+
+            document.getElementById("result").innerHTML =
+                "Thank you, " + name + "! Your feedback has been submitted.";
+        }
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Contact / Feedback</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="time.html">Time Management</a>
+      <a href="study.html">Study Methods</a>
+      <a href="distractions.html">Avoiding Distraction</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main style="font-size: 20px;">
+    <section>
+    <div class="form-container">
+        <h2>Feedback Form</h2>
+        <br>
+        <form action="thankyou.html" onsubmit="submitFeedback();">
+            
+            <label>Your Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label>Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label>Rate Us:</label>
+            <select id="rating" required>
+  <option value="" selected disabled>Select a rating</option>
+  <option value="Excellent">Excellent 🌟🌟🌟🌟🌟</option>
+  <option value="Good">Good 🌟🌟🌟🌟</option>
+  <option value="Average">Average 🌟🌟🌟</option>
+  <option value="Poor">Poor 🌟🌟</option>
+</select><br>
+
+            <label>Your Feedback:</label>
+            <textarea id="feedback" rows="4" required></textarea><br><br>
+            
+            <label>Submit:</label>
+            <input type="submit" value="Proceed">
+        </form>
+
+        <div id="result"></div>
+    </div>
+  </section>
+</main>
+    <footer>
+    <p><a href="index.html"><font color = "black">Back to Home</font></a></p>
+  </footer>
+</body>
+</html>
